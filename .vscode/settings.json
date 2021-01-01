@@ -1,11 +1,20 @@
 {
+    "python.pythonPath": ".venv/bin/python3.9",
+    "python.languageServer": "Pylance",
     "python.formatting.provider": "black",
     "python.linting.enabled": true,
-    "python.pythonPath": ".venv/bin/python",
-    "python.testing.pytestArgs": [
-        "."
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--max-line-length",
+        "88",
+        "--ignore=E203,W503,W504"
     ],
+    "python.analysis.typeCheckingMode": "strict", //型チェック
     "python.testing.unittestEnabled": false,
     "python.testing.nosetestsEnabled": false,
-    "python.testing.pytestEnabled": true
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": [
+        "."
+    ]
 }

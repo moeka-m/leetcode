@@ -4,6 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+leetcode-moeka = {editable = true, path = "."}
 
 [dev-packages]
 black = "*"
